@@ -120,7 +120,7 @@ class CO2Meter:
             raise IOError("worker thread couldn't read data")
         result = {}
         if CO2METER_TEMP in self._values:
-            result = {'temperature': (self._values[CO2METER_TEMP]/16.0-273.15)}
+            result = {'temperature': round((self._values[CO2METER_TEMP]/16.0-273.15),1)}
 
         return result
 
