@@ -5,7 +5,7 @@ import time
 
 
 def process_loop():
-    Meter = CO2Meter("/dev/hidraw3")
+    Meter = CO2Meter("/dev/hidraw0")
 
     temperature = Gauge('temperature', 'Measured tempeterature')
     co2 = Gauge('co2', 'Measured CO2 level')

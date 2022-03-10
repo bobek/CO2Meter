@@ -12,7 +12,7 @@ def on_connect(client, userdata, flags, rc):
         print("Connection failed")
 
 Connected = False   #global variable for the state of the connection
-Meter = CO2Meter("/dev/hidraw3")
+Meter = CO2Meter("/dev/hidraw0")
 
 client = mqttClient.Client()
 client.on_connect= on_connect
