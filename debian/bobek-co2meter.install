@@ -1,0 +1,2 @@
+mqtt.py opt/bobek/co2meter
+prometheus.py opt/bobek/co2meter

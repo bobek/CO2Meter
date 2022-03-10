@@ -1,0 +1,16 @@
+[Unit]
+Description=Bobek CO2 Meter
+
+# Setting StartLimitIntervalSec to 0 means that systemd will not rate-limit restarting
+StartLimitIntervalSec=0
+
+[Service]
+User=pi
+Group=pi
+Type=simple
+Restart=always
+RestartSec=5s
+ExecStart=/usr/bin/python3 /opt/bobek/co2meter/mqtt.py
+
+[Install]
+WantedBy=multi-user.target

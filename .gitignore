@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+.pybuild
 
 # C extensions
 *.so
@@ -87,3 +88,11 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+debian/.debhelper/
+debian/files
+debian/bobek-co2meter.substvars
+debian/bobek-co2meter/
+debian/debhelper-build-stamp
+debian/*.debhelper
+debian/*.log

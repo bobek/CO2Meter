@@ -1,0 +1,8 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: bobek-co2meter
+Upstream-Contact: a.kral@bobek.cz
+
+Files: *
+Copyright: 2022 Bobek
+License: GPL
+

@@ -1,0 +1,12 @@
+Source: bobek-co2meter
+Section: misc
+Priority: optional
+Maintainer: Antonin Kral <a.kral@bobek.cz>
+Build-Depends: debhelper-compat (= 12), python3
+Standards-Version: 4.5.0
+
+Package: bobek-co2meter
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: CO2 Meter
+ Polls CO2 meter on serial and makes is available as prometheus/mqtt.
